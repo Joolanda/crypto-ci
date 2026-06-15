@@ -1,0 +1,54 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Local data
+data/
+*.csv
+*.parquet
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+
+# Git
+.git/
+.gitignore
+
+# Build artifacts
+build/
+dist/
+
+# Streamlit cache
+.streamlit/
+
+# Model artifacts
+models/
+*.joblib
+*.pkl
+
+# Notebooks (optioneel uitsluiten)
+notebooks/
+
+# Terraform state (infra/)
+infra/.terraform/
+infra/terraform.tfstate
+infra/terraform.tfstate.backup
+
+# Reports
+reports/
+
+# Kanban sync artifacts
+scripts/sync_kanban.py
