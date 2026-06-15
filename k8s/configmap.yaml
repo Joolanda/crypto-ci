@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: market-ml-config
+data:
+  # Placeholder values — to be expanded later
+  LOG_LEVEL: "info"
+  MODEL_VERSION: "placeholder"
+  FEATURE_FLAG_EXPERIMENTAL: "false"

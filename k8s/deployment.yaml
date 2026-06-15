@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: market-ml
+  labels:
+    app: market-ml
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: market-ml
+  template:
+    metadata:
+      labels:
+        app: market-ml
+    spec:
+      containers:
+        - name: market-ml
+          image: ghcr.io/joolanda/market-ml:latest
+          ports:
+            - containerPort: 8000
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 5
+            periodSeconds: 5
